@@ -1,0 +1,12 @@
+---
+layout: post
+title:  ""
+date:   2023-09-27 22:21:59 +00:00
+image: /images/UCSD.png
+categories: education
+author: "Chengjing Yuan"
+school: "UC San Diego"
+location: "San Diego, USA"
+degreems: "M.S. in Electrical and Computer Engineering, 2023-Present"
+degreebs: "B.S. in Computer Engineering, 2019-2023"
+---

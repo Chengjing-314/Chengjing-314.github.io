@@ -34,17 +34,16 @@
               <h1>
                 Chengjing Yuan
               </h1>
-              <p>I am a first-year ECE master student at UCSD, with depth in <a href="https://www.ece.ucsd.edu/faculty-research/ece-research-areas/intelligent-systems-robotics-control-impacted">Intelligent System, Robotics and Control</a>. I am fortunate to be advised by Prof. <a href="https://xiaolonw.github.io/">Xiaolong Wang</a>. 
+              <p>I am currently a first-year ECE master student at <a href="https://ucsd.edu/">UC San Diego</a>, with depth in <a href="https://www.ece.ucsd.edu/faculty-research/ece-research-areas/intelligent-systems-robotics-control-impacted">Intelligent System, Robotics and Control</a>. I am fortunate to be advised by Prof. <a href="https://xiaolonw.github.io/">Xiaolong Wang</a>. 
+                I recevied my B.S. in Computer Engineering from UC San Diego in 2023.
               </p>
               <p>
-                My research interests lie in <strong>Robot Learning, Reinforcement Learning, Computer Vision and Control theory</strong>.
-              </p>
-              <p>
-                If you are interested in my work, please feel free to to contact me for further discussions or potential collaborations.
+                My research interests lie in <strong>Robot Learning</strong>, <strong>Reinforcement Learning</strong>, <strong>Computer Vision</strong> and <strong>Control theory</strong>.
               </p>
               <p style="text-align:center">
-                <a target="_blank" href="mailto:cyuan@ucsd.edu"> Email</a> &nbsp;/&nbsp;
-                <a href="https://github.com/chengjing-314">GitHub</a> &nbsp;&nbsp;
+                <a target="_blank" href="mailto:cyuan@ucsd.edu">Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/chengjing-314">GitHub</a> &nbsp;/ &nbsp;
+                <a href="https://www.linkedin.com/in/chengjing-yuan-4630951a8/">Linkedin</a> &nbsp;&nbsp;
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
@@ -73,7 +72,6 @@
               <h3>{{post.title}}</h3>
               <br>
               {{post.authors}}
-
               <br>
               <!-- <em>{{post.venue}}</em>, {{ post.date | date: "%Y" }} -->
               <em>{{post.venue}}</em>
@@ -110,6 +108,38 @@
         <br>
         <br>
         <br>
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr>
+            <td style="padding:2.5%;width:100%;vertical-align:middle">
+              <h2>Education</h2>
+            </td>
+          </tr>
+        </table>
+               <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          {% for post in site.posts %}
+          {% for cat in post.categories %}
+          {% if cat == 'education' %}
+          <tr>
+            <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:60px">
+              <img src="/tn{{post.image}}" alt="project image" style="width:auto; height:auto; max-width:70%;" />
+            </td>
+            <td style="padding:2.5%;width:75%;vertical-align:middle">
+              <h3>{{post.school}},&nbsp&nbsp</h3> <h3 style="font-weight: normal;">{{post.location}}</h3>
+              <br>
+              <br>
+              {{post.degreems}}
+              <br>
+              {{post.degreebs}}
+            </td>
+          </tr>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
+        </table>
+        
+
+
         <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tr>
             <td style="padding:2.5%;width:100%;vertical-align:middle">
